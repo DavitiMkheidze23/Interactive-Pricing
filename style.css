@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+body{
+    background-image:url(bg-pattern.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.top-img{
+    margin-top: 57px;
+}
+h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #293356;
+    margin-top: -113px;
+}
+.heading-p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    color: #848EAD;
+    padding: 0px 25px 64px 25px;
+    width: 189px;
+}
+.main-div{
+    width: 327px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 88px;
+}
+.page-p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    color: #848EAD;
+    padding: 34px 101px 25px 99px;
+}
+.money-p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+.month{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+}
+.year{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+    display: none;
+}
+.monthly-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 37px;
+}
+.regular-p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+}
+.billing-div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.percentage-div{
+    width: 41px;
+    background: #FEEDE8;
+    border-radius: 9.5px;
+}
+.percentage-p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #FF8D68;
+}
+hr{
+    background: #ECF0FB;
+    border: 0;
+    width: 327px;
+    height: 1px;
+    margin-top: 38px;
+    margin-bottom: 24px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 16.05px;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+button{
+    background: #293356;
+    border-radius: 20.5px;
+    width: 170px;
+    height: 41px;
+    border: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+    cursor: pointer;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CFD8EF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .range{
+    width: 279px;
+    margin-bottom: 40px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7AEADF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7AEADF;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  input#price-slider {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    height: 10px;
+    background: linear-gradient(
+      to right,
+      hsl(174, 77%, 80%) 0%,
+      hsl(174, 77%, 80%) 50%,
+      hsl(224, 65%, 95%) 0%,
+      hsl(224, 65%, 95%) 100%
+    );
+  }
+  
+  input#price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsl(174, 86%, 45%);
+    background-image: url(https://digitshack.com/codepen/mentor5/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 7px 10px 4px rgba(16, 213, 194, 0.2);
+  }
+  
+  input#price-slider::-webkit-slider-thumb:hover {
+    background-color: hsl(174, 77%, 80%);
+  }
+  .page-10k{
+    display: none;
+  }
+
+  .switch input {
+    opacity: 0;
+  }
+  
+  .switch {
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    background-color: hsl(223, 50%, 87%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+  }
+  
+  .toggle-slider:hover {
+    background-color: hsl(174, 86%, 45%);
+  }
+  
+  .toggle-slider::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .switch input:checked + .toggle-slider:before {
+    transform: translateX(25px);
+  }
+
+  .billing {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.billing p {
+  display: inline-block;
+  padding: 0 7px;
+}
+
+.billing p.discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  font-size: 11px;
+  border-radius: 10px;
+}
+.discount{
+    display: none;
+}
+@media only screen and (min-width: 1440px){
+    body{
+        background-color: #F9FAFF;
+        background-position: top;
+    }
+    .top-img{
+        margin-top: 67px;
+    }
+    h1{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        color: #293356;
+        margin-bottom: 12px;
+    }
+    .heading-p{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #848EAD;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 92px;
+    }
+    .main-div{
+        width: 540px;
+    }
+    .page-p{
+        padding: 0;
+        margin-left: -360px;
+        margin-top: 58px;
+    }
+    .monthly-div{
+        position: absolute;
+        margin-right: -330px;
+        margin-top: 43px;
+    }
+    .range{
+        width: 444px;
+        margin-top: 45px;
+        margin-bottom: 57px;
+    }
+    .mob-discount{
+        display: none;
+    }
+    .discount{
+        display: inline;
+        margin-left: 6px;
+    }
+    .percentage-div{
+        width: 80px;
+    }
+    .billing-div{
+        gap: 16px;
+    }
+    hr{
+        width: 540px;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+    .last-div{
+        display: flex;
+        gap: 133px;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+    .info-div{
+        align-items: normal;
+    }
+    button{
+        margin: 0;
+    }
+}

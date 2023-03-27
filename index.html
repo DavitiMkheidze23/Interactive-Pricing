@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interact Pricing Components</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="pattern-circles.svg" alt="circles" class="top-img">
+    <h1>Simple, traffic-based pricing</h1>
+    <p class="heading-p">Sign-up for our 30-day trial. 
+        No credit card required. </p>
+    <div class="main-div">
+        <p class="page-p"><span id="pageView">100k </span> Pageviews</p>
+            <div class="range-slider">
+                <input type="range" id="price-slider" class="range" min="0" max="4" value="2">
+              </div>
+        <div class="monthly-div">
+            <p class="money-p">$<span id="cost">16</span>.00</p>
+            <p class="month">/ month</p>
+            <p class="year">/ year</p>
+        </div>
+        <div class="billing-div">
+            <p class="regular-p">Monthly Billing</p>
+            <div class="switch-div">
+                <label class="switch">
+                    <input type="checkbox" name="billing" id="billing">
+                    <span class="toggle-slider"></span>
+                  </label>
+            </div>
+            <p class="regular-p">Yearly Billing</p>
+            <div class="percentage-div">
+                <p class="percentage-p mob-discount">-25%</p>
+                <p class="percentage-p discount">25% discount</p>
+            </div>
+        </div>
+        <hr>
+    <div class="last-div">
+        <div class="info-div">
+            <div class="info">
+                <img src="icon-check.svg" alt="icon-check" class="icon-check">
+                <p class="regular-p">Monthly Billing</p>
+            </div>
+            <div class="info">
+                <img src="icon-check.svg" alt="icon-check" class="icon-check">
+                <p class="regular-p">100% data ownership </p>
+            </div>
+            <div class="info">
+                <img src="icon-check.svg" alt="icon-check" class="icon-check">
+                <p class="regular-p">Email reports</p>
+            </div>
+        </div>
+        <button>Start my trial</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
